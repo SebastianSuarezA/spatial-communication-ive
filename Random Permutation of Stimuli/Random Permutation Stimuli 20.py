@@ -20,7 +20,7 @@ with open("results/participant_orders.csv", "w", newline="") as f:
     writer.writerow(header)
     
     # Generate random permutation for each participant
-    for participant in range(1, 17):
+    for participant in range(1, 21):
         # Random permutation of positions
         positions = list(range(1, 17))
         random.shuffle(positions)
@@ -35,3 +35,4 @@ with open("results/participant_orders.csv", "w", newline="") as f:
         writer.writerow([f"Participant_{participant}"] + ordered_stimuli)
 
 print("Randomized participant orders saved to 'results/participant_orders.csv'.")
+
